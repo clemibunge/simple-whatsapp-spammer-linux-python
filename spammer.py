@@ -10,4 +10,4 @@ for ch in text:
     # type out the text
     subprocess.call(["xdotool", "type", ch])
     # increase or decrease the time below to type slower or faster
-    time.sleep(0.000000000000000000000000000000000000001)
+    time.sleep(0.0001)
