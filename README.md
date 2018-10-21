@@ -1,3 +1,4 @@
 # simple-whatsapp-spammer-linux
 
-`<addr>`
+`sudo apt-get install xdotool`
+
