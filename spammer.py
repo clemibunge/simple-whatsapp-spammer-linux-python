@@ -2,12 +2,14 @@
 import subprocess
 import time
 import sys
-# open the textfile
-text = open(sys.argv[1]).read().strip()
-print("SPAM BEGINS IN 10 SECOUNDS!!!")
+
+
+message = input("Spam Message: ")
+msgint = int(input("How often?: "))
+
+print("SPAM BEGINS IN 10 SECS!!!")
 time.sleep(10)
-for ch in text:
-    # type out the text
-    subprocess.call(["xdotool", "type", ch])
-    # increase or decrease the time below to type slower or faster
-    time.sleep(0.0001)
+
+for i in range(msgint):
+    subprocess.call(["xdotool", "type", message])
+    subprocess.call(["xdotool", "key", "Return"])
