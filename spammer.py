@@ -13,3 +13,4 @@ time.sleep(10)
 for i in range(msgint):
     subprocess.call(["xdotool", "type", message])
     subprocess.call(["xdotool", "key", "Return"])
+    sleep 0.1
