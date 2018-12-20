@@ -2,6 +2,8 @@
 import subprocess
 import time
 import sys
+from time import sleep
+
 
 
 message = input("Spam Message: ")
@@ -13,4 +15,4 @@ time.sleep(10)
 for i in range(msgint):
     subprocess.call(["xdotool", "type", message])
     subprocess.call(["xdotool", "key", "Return"])
-    sleep 0.1
+    sleep(0.1)
